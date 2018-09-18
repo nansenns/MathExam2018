@@ -101,7 +101,14 @@ public static void main(String[] arg) {
 			{
 				p=a[i]/b[i];
 				q=a[i]%b[i];
-				System.out.println("("+i+")"+" "+a[i]+" "+"÷"+" "+b[i]+" "+"="+" "+p+"..."+q);
+				if(q!=0)
+				{
+					System.out.println("("+i+")"+" "+a[i]+" "+"÷"+" "+b[i]+" "+"="+" "+p+"..."+q);
+				}
+				else
+				{
+					System.out.println("("+i+")"+" "+a[i]+" "+"÷"+" "+b[i]+" "+"="+" "+p);
+				}
 			}
 		}
 		}
